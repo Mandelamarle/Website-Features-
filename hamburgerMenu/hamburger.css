@@ -1,0 +1,54 @@
+/** Default **/
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'montserrat', sans-serif;
+background-color: black;
+}
+/** End **/
+
+
+/** Centering the Hamburger **/
+
+.main_container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);  
+}
+/** End **/
+
+/** Menu **/
+
+.hamburgerMenu {
+display: inline-block;
+cursor: pointer;
+}
+/** End **/
+
+/** Typography for the Hamburger **/
+.bar-1, .bar-2, .bar-3{
+width: 35px;
+height: 5px;
+background-color: #faf5ef;
+margin: 6px 2em 0;
+transition: 0.4s;
+}
+
+/** End **/
+
+/** Rotate Bars **/
+.rotate .bar-1 {
+transform: translate(0, 11px) rotate(-45deg);
+}
+.rotate .bar-2{
+opacity: 0;
+}
+.rotate .bar-3{
+transform: translate(0, -11px) rotate(45deg);
+}
+
+/** End **/
+
